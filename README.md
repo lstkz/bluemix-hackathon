@@ -1,11 +1,12 @@
 ## Sadness API
 
 ## Description
-A starter pack for nodejs with bluemix deployment.
+An API for detecting sad sentences in the github comments.
 
 ## Requirements
 * node `^8` https://nodejs.org/en/
 * npm `^4`
+* CF tool https://github.com/cloudfoundry/cli#getting-started
 
 ## Configuration
 
@@ -28,7 +29,7 @@ A starter pack for nodejs with bluemix deployment.
 
 ## Bluemix deployment
 1. go to https://console.eu-gb.bluemix.net
-2. click *Create app*
+2. click *Create*
 3. pick *SDK for Node.js*
 4. pick any free *App name* and click *Create*
 5. Click on the app and go to tab *Getting started*

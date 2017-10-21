@@ -32,7 +32,8 @@ async function _getTone(text) {
   return await request.post(`${credentials.url}/v3/tone?version=2016-05-19`)
     .auth(credentials.username, credentials.password)
     .send({
-      text,
+      // exclude multiline code blocks
+      text: text.replace(/```[\s\S]+?```/g, ''),
     }).then((res) => res.body);
 }
 
