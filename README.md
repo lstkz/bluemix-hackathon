@@ -13,6 +13,7 @@ A starter pack for nodejs with bluemix deployment.
 |----|-----------|
 |`PORT`| The port to listen|
 |`VERBOSE_LOGGING`| The flag if debug logging in enabled|
+|`GITHUB_TOKEN`| The github token to use for API requests. Create it here https://github.com/settings/tokens. Don't check any permissions.|
 
 
 ## Local deployment

@@ -5,6 +5,7 @@ import request from 'superagent';
 import _ from 'lodash';
 import decorate from 'decorate-it';
 import Joi from 'joi';
+import config from 'config';
 
 // ------------------------------------
 // Exports
@@ -45,9 +46,13 @@ async function _getTone(text) {
 async function getGithubComments(org, repo, issueId) {
   const issueUrl = `https://api.github.com/repos/${org}/${repo}/issues/${issueId}`;
   const {firstIssue, comments} = await Promise.props({
-    firstIssue: request.get(`${issueUrl}`)
+    firstIssue: request
+      .get(`${issueUrl}`)
+      .auth('', config.GITHUB_TOKEN)
       .then((res) => _.pick(res.body, 'id', 'body')),
-    comments: request.get(`${issueUrl}/comments`)
+    comments: request
+      .get(`${issueUrl}/comments`)
+      .auth('', config.GITHUB_TOKEN)
       .then((res) => res.body.map((comment) => _.pick(comment, 'id', 'body'))),
   });
   return [firstIssue, ...comments];
