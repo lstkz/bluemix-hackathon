@@ -1,11 +1,11 @@
-## Blue mix starter
+## Sadness API
 
 ## Description
 A starter pack for nodejs with bluemix deployment.
 
 ## Requirements
-* node `^7.2.0` https://nodejs.org/en/
-* npm `^3.10.0`
+* node `^8` https://nodejs.org/en/
+* npm `^4`
 
 ## Configuration
 
@@ -23,13 +23,6 @@ A starter pack for nodejs with bluemix deployment.
 |`dev`|Same as `npm start`, but enables nodemon for the server as well.|
 |`lint`|Lint all `.js` files.|
 |`lint:fix`|Lint and fix all `.js` files. [Read more on this](http://eslint.org/docs/user-guide/command-line-interface.html#fix).|
-|`spec`|Run unit tests|
-|`spec:watch`|Run unit tests in watch mode|
-|`e2e`|Run e2e tests|
-|`e2e:watch`|Run e2e tests in watch mode|
-|`coverage`|Run unit tests and verify coverage|
-|`check-coverage`|Verify coverage only|
-|`test`|Run lint, tests and checks coverage|
 
 
 ## Bluemix deployment
@@ -45,8 +38,5 @@ A starter pack for nodejs with bluemix deployment.
 ![Alt text](https://monosnap.com/file/rQjOuQ6C8tUyoi8se53iSBNXD1e944.png)
 
 
-
-## Testing
-Import `postman/Bluemix starter.postman_collection.json` collection and `postman/bluemix starter.postman_environment.json` environment.  
-
-Live demo http://sky-bluemix-starter.eu-gb.mybluemix.net/api/test  
+Example URL: https://sky90210.mybluemix.net/api/tones   
+Update this url in extension source code

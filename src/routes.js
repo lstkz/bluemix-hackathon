@@ -2,12 +2,12 @@
  * Contains all application endpoints
  */
 
-import TestController from './controllers/TestController';
+import ToneController from './controllers/ToneController';
 
 export default {
-  '/test': {
-    get: {
-      method: TestController.testMethod,
+  '/tones': {
+    post: {
+      method: ToneController.getGithubTones,
       public: true,
     },
   },
