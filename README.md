@@ -1,5 +1,7 @@
 ## Sadness API
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/BetterCallSky/bluemix-hackathon.svg?token=94b29eb4f951022b0f68b7c7cba8a403b0deda321e59aed3ad2c31aa0d480684&ts=1543840637283)](https://greenkeeper.io/)
+
 ## Description
 An API for detecting sad sentences in the github comments.
 
